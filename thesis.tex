@@ -3,11 +3,23 @@
 
 \documentclass[oneside,12pt]{Classes/CUEDthesisPSnPDF}
 
+\usepackage{tabularx}
+\usepackage{rotating}
+\usepackage{tikz}
+\usepackage{listings}
+\usepackage[acronym]{glossaries}
+
+
+
+
+
+
+
 \ifpdf
 %    \pdfinfo { /Title  (LIT Masters Thesis)
 %               /Creator (TeX)
 %               /Producer (pdfTeX)
-%               /Author (Paul Vesey paul.vesey@lit.ie)
+%               /Author (Firstname Lastname K12345678@student.lit.ie)
 %               /CreationDate (D:20120601000000)  %format D:YYYYMMDDhhmmss
 %               /ModDate (D:20120615213532)
 %               /Subject (LIT Masters Thesis)
@@ -25,18 +37,18 @@
 \formalauthor{Ms. Anne E. Mal}
 
 \ifpdf
-  \author{\href{mailto:paul.vesey@lit.ie}{Paul Vesey}}
-  \collegeordept{\href{http://www.lit.ie/BuiEnv/}{School of the Built Environment}}
+  \author{\href{mailto:k12345678@student.lit.ie}{Student Name}}
+  \collegeordept{\href{https://lit.ie/aset/built-environment}{Department of the Built Environment}}
   \university{\href{http://www.lit.ie}{Limerick Institute of Technology}}
 % insert below the file name that contains the crest in-place of 'UnivShield'
-  \crest{\includegraphics[width=90mm]{SBE.jpg}}
+  \crest{\includegraphics[width=90mm]{LITBuiltLogo.png}}
 
 \else
-  \author{Paul Vesey}
-  \collegeordept{School of the Built Environment}
+  \author{Student Name}
+  \collegeordept{Department of the Built Environment}
   \university{Limerick Institute of Technology}
 % insert below the file name that contains the crest in-place of 'UnivShield'
-  \crest{\includegraphics[bb = 0 0 292 336, width=90mm]{SBE.jpg}}
+  \crest{\includegraphics[bb = 0 0 292 336, width=90mm]{LITBuiltLogo.jpg}}
 
 \fi
 
@@ -110,7 +122,8 @@
 
 \backmatter % book mode only
 
-\bibliographystyle{plainnat}
+\bibliographystyle{agsm}
+%\bibliographystyle{plainnat}
 %\bibliographystyle{Classes/CUEDbiblio}
 %\bibliographystyle{Classes/jmb}
 %\bibliographystyle{Classes/jmb} % bibliography style
